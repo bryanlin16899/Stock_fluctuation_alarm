@@ -4,12 +4,12 @@ from twilio.rest import Client
 STOCK_NAME = "TSLA"
 COMPANY_NAME = "Tesla Inc"
 
-STOCK_API_KEY = "DH40O164TFMIFCWS"
-NEWS_API_KEY = "eac758f36bd5438fbb52614272b68601"
+STOCK_API_KEY = ""
+NEWS_API_KEY = ""
 STOCK_ENDPOINT = "https://www.alphavantage.co/query"
 NEWS_ENDPOINT = "https://newsapi.org/v2/everything"
-TWILIO_SID = "AC54eaf9f436c566420931df8dbbb038a8"
-TWILIO_AUTH_TOKEN = "0d8456dcb3755e650a5a8e30dc22bd29"
+TWILIO_SID = ""
+TWILIO_AUTH_TOKEN = ""
 
 stock_params = {
     "function": "TIME_SERIES_DAILY",
@@ -49,6 +49,6 @@ if abs(percentage) > 1:
         message = client.messages.create(
             body=article,
             from_="+13603287144",
-            to="+886972988302"
+            to="+"
         )
 
